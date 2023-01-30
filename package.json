@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "This line on package.json makes the server continusly monitor/watch the file db.json and serve/display its current/most updated value.",
   "scripts": {
+    "predeploy": "npm run build",
+	  "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve-jsonnn": "json-server --watch db.json --port 4000 --routes routes.json",
     "json-server-casual": "json-server --watch casual.js",
