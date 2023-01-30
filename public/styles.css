@@ -1,0 +1,221 @@
+/* 
+    Color palette 
+
+    #7289da
+    #ffffff
+    #99aab5
+    #2c2f33
+    #23272a
+
+*/
+
+/*** UNIVERSAL ***/
+
+html,
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0%;
+    font-family: 'ubuntu';
+    background-color: #23272a;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    width: fit-content;
+
+}
+
+/*** SCROLLBAR ***/
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-button {
+    width: 20px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-track:hover {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #23272a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7289da;
+}
+
+* {
+    font-family: 'ubuntu';
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    left: 0;
+    width: 100vw;
+}
+
+.button {
+    transition: 250ms;
+    background-color: #99aab5;
+    border-radius: 5px;
+    border-color: #99aab5;
+}
+
+.button:hover {
+    transform: scale(1.15);
+    transition: 200ms;
+    border-color: #7289da;
+    background-color: #7289da;
+    cursor: pointer;
+}
+
+/*** THE DIV ABOVE THE TABLE ***/
+
+input#query {
+    margin: 5px auto 15px;
+    width: 50%;
+}
+
+button.form-buttons {
+    margin: 0 10px 20px;
+    font-size: 1.1rem;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    place-items: center;
+    flex-wrap: wrap;
+    place-content: center;
+    transition: 500ms;
+}
+
+form>* {
+    margin: 5px 5px;
+    flex: 0.5 1 40%;
+}
+
+form>select {
+    flex: 0.5 1 40%;
+}
+
+form>input[type='submit'] {
+    order: 1;
+    flex: 0 1 40%;
+    margin: 0 100px;
+}
+
+/* form>input:valid:not([type='submit']):not([name='id']),
+form>select {
+    outline: 2px solid green;
+    outline-offset: .1rem;
+}
+
+form>input:invalid:not([type='submit']),
+form>select {
+    outline: 2px solid red;
+    outline-offset: .1rem;
+} */
+
+/*** THE TABLE ***/
+
+table {
+    margin: 20px 0px;
+    border-spacing: 0;
+    white-space: nowrap;
+}
+
+col:nth-of-type(2n - 1) {
+    background: linear-gradient(#99aab55b, #7289daa8);
+}
+
+col:nth-of-type(2n) {
+    background: linear-gradient(#99aab52e, #7289da83);
+}
+
+thead {
+    border-bottom: 2px solid black;
+    position: sticky;
+    top: -10px;
+    background-color: #99aab5cd;
+}
+
+td,
+th {
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top-width: 0;
+    border-left-width: 0;
+}
+
+th {
+    height: 60px;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+td {
+    padding: 5px;
+    min-width: 40px;
+}
+
+th:last-child,
+td:last-child {
+    border-right-width: 0;
+}
+
+button.sort-button {
+    margin: auto;
+    place-self: end;
+    position: absolute;
+    right: 2px;
+    bottom: 3px;
+    width: 20px;
+    aspect-ratio: 1;
+    border: none;
+    box-shadow: 1px 1px 1px #23272a, inset 1px 1px 3px #c1c9e7;
+}
+
+button#sort-button>img {
+    position: absolute;
+    top: 4px;
+    left: 5px;
+}
+
+/*** THE POP-UP FOR DELETING ENTRIES ***/
+
+div#popUp {
+    background-color: #ffffffa5;
+    color: black;
+    /* position: absolute; */
+    height: min-content;
+    width: min-content;
+    border-radius: 5px;
+    padding: 5px;
+    /* left: 10px; */
+    display: flex;
+    place-items: center;
+    transition: 250ms;
+    opacity: 0.8;
+}
+
+div#popUp:hover {
+    transition: 200ms;
+    opacity: 1;
+}
+
+div#popUp>button {
+    padding: 5px;
+    margin-right: 20px;
+}
+
+div#popUp>p {
+    font-size: 0.6rem;
+}

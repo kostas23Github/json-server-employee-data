@@ -1,0 +1,7 @@
+{
+    "api/v1/*": "/2",
+    "description": "What it does is maps /api/v1/products. So now to access the products(i.e. http://localhost:<port value>/products) i have to make the url like this: http://localhost:<port value>/api/v1/products. In short i have to add the extra 2 routes? to the path of the URL.",
+    "/products/:category": "/products?category=:category",
+    "description2": "The above adds a new route with a predifined filter in place. When i type /products/electronics i get all products whose category is electronics."
+    
+}

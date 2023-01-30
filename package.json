@@ -1,0 +1,31 @@
+{
+  "name": "json-server-tutorials",
+  "version": "1.0.0",
+  "description": "This line on package.json makes the server continusly monitor/watch the file db.json and serve/display its current/most updated value.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve-jsonnn": "json-server --watch db.json --port 4000 --routes routes.json",
+    "json-server-casual": "json-server --watch casual.js",
+    "build": "JSON-SERVER-EMPLOYEE-DATA"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kostas23Github/employee-data.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kostas23Github/employee-data/issues"
+  },
+  "homepage": "https://github.com/kostas23Github/employee-data",
+  "dependencies": {
+    "build": "^0.1.4",
+    "casual": "^1.6.2",
+    "faker": "^6.6.6",
+    "json-server": "^0.17.1"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0"
+  }
+}

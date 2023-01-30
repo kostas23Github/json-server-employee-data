@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local DB</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./importToHTML.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>-Employee Database-</h1>
+        <label for="query">Search for</label>
+        <input type="text" name="query" id="query">
+        <div>
+            <button id="toggle-NewEntryForm" class="form-buttons button">Add New Entry</button>
+            <button id="toggle-changeEntryForm" class="form-buttons button">Change an Entry</button>
+        </div>
+        <form>
+            <!-- Each button is displayed according to which above button was pressed. -->
+            <input type="submit" value="Submit new Entry" id="submit-new-entry" class="button">
+            <input type="submit" value="Submit changed Entry" id="submit-changed-entry" class="button">
+        </form>
+    </div>
+    <table></table>
+</body>
+
+</html>
